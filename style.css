@@ -90,51 +90,21 @@ header {
 }
 
 .testimonial-slide {
-    min-width: 100%;
+    width: 100%; /* 设置宽度为100%，而不是 min-width */
     flex-shrink: 0;
     text-align: center;
 }
 
 .testimonial-text {
     font-size: 1.5em;
-    padding: 0 20px;
+    padding: 0 50px;
     white-space: normal; /* 自动换行 */
 }
 
-.testimonial-author {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    font-size: 0.9em;
-    color: #b3b3b3;
-}
-
-.testimonial-image {
-    width: 50px;
-    height: 50px;
-    background-color: #333;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    color: #888;
-    font-size: 0.8em;
-}
-
-.author-info {
-    text-align: left;
-}
-
 .author-name {
-    font-weight: bold;
     color: #ffffff;
-}
-
-.author-title {
-    font-size: 0.8em;
-    color: #888;
+    font-size: 1.3em;
+    margin-top: 10px;
 }
 
 /* 左右按钮 */
@@ -142,12 +112,11 @@ header {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background: none; /* 移除背景颜色 */
     color: #fff;
     border: none;
-    padding: 10px;
     cursor: pointer;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .prev-button {
@@ -157,13 +126,14 @@ header {
 .next-button {
     right: 10px;
 }
+
 /* 直播内容布局 */
 .program-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 10vw; 
-    padding-bottom: 10vw;
+    padding-bottom: 3vw;
     width: 100%;
 }
 .video-section, .program-info {
@@ -195,7 +165,7 @@ video {
 /* 投票按钮 */
 .vote-section {
     text-align: center;
-    padding: 40px;
+    padding: 100px;
 }
 .vote-section h2 {
     font-size: 35px;

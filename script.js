@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function showSlide(index) {
         const slider = document.querySelector(".testimonial-slider");
-        slider.style.transform = `translateX(-${index * 100}%)`;
+        slider.style.transform = `translateX(-${index * 100}%)`; // 确保每次移动一个完整的评论
     }
 
     prevButton.addEventListener("click", function () {
@@ -23,5 +23,5 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(() => {
         currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
         showSlide(currentIndex);
-    }, 5000); // 每5秒自动切换
+    }, 20000); // 每5秒自动切换
 });
