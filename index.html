@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>直播页面</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 页面内容 -->
+    <div class="content">
+
+        <!-- 页眉 -->
+        <header>
+            <div class="container">
+                <nav class="navbar">
+                    <a href="https://www.juryory.com/">首页</a>
+                    <a href="https://www.juryory.com/index.php/movielive/">每周放映</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- 直播内容区域，动态布局 -->
+        <section class="program-container" id="programContainer">
+            <!-- 左侧直播视频 -->
+            <div class="video-section" id="videoSection">
+                <video id="liveVideo" controls autoplay>
+                    <source src="http://www.wjchome.com:2022/live/414e4a14a874.m3u8" type="application/x-mpegURL">
+                    您的浏览器不支持 HLS 播放。
+                </video>
+            </div>
+            <!-- 右侧节目介绍 -->
+            <div class="program-info" id="programInfo">
+                <h1>因果报应 Maharaja</h1>
+                <p>这是一部深刻探讨人性、道德与因果报应的印度悬疑片，揭示了一个错综复杂的复仇故事。影片开场是一场离奇至极的报案：一名理发师的女儿在一场事故中幸存，而这一切都要归功于一个貌似毫无价值、售价仅为350卢比的垃圾桶“拉希米”，它成为了他们一家希望的象征。当垃圾桶被偷后，理发师不惜一切代价，甚至贿赂警察，试图找回它。然而，这起案件逐渐演变成一场精心策划的假供认，而嫌疑人似乎对理发师的生活了如指掌……</p>
+            </div>
+        </section>
+
+        <!-- 投票按钮 -->
+        <section class="vote-section">
+            <h2>投票决定下周的放映片单</h2>
+            <button onclick="window.location.href='https://txc.qq.com/products/669905/topic-detail/12655/'">前往投票</button>
+        </section>
+
+        <!-- 页脚 -->
+        <footer>
+            <p>&copy; 2024 直播平台</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
