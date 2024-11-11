@@ -1,3 +1,19 @@
+/* 引入思源宋体 */
+@font-face {
+    font-family: 'Source Han Serif';
+    src: url('fonts/SourceHanSerif-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 引入思源黑体 */
+@font-face {
+    font-family: 'Source Han Sans';
+    src: url('fonts/SourceHanSans-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -54,23 +70,22 @@ header {
     text-decoration: none;
 }
 
-/* 直播内容布局 */
 .program-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* 改为上下排列 */
     align-items: center;
-    gap: 20px;
-    min-height: 80vh;
-    padding: 40px 20px;
+    padding-top: 10vw; 
+    padding-bottom: 10vw;
     width: 100%;
 }
-.video-section {
-    flex: 2;
+.video-section, .program-info {
+    width: 100%; /* 保持相同宽度 */
 }
 .program-info {
-    flex: 1;
     text-align: left;
     line-height: 1.5;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
 }
 .program-info h1 {
     font-size: 4vw;
@@ -78,8 +93,7 @@ header {
     font-family: 'Source Han Serif', serif;
 }
 .program-info p {
-    font-size: 1.5vw;
-    line-height: 1.5;
+    font-size: 2vw;
     font-family: 'Source Han Sans', sans-serif;
 }
 
@@ -116,7 +130,8 @@ video {
 /* 页脚 */
 footer {
     text-align: center;
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* 增加透明背景 */
+    padding: 10px 0;
     margin-top: 20px;
 }
 .footer-logo {
