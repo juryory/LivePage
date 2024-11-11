@@ -67,8 +67,11 @@ header {
 }
 .navbar a {
     color: white;
-    margin-left: 20px;
+    margin-left: 2.5vw;
+    font-size: 1.5vw;
     text-decoration: none;
+    font-family: 'Source Han Sans';
+    font-weight: 900;
 }
 
 /* 用户评论轮播模块样式 */
@@ -96,15 +99,20 @@ header {
 }
 
 .testimonial-text {
-    font-size: 1.5em;
+    font-size: 1.5vw;
     padding: 0 50px;
     white-space: normal; /* 自动换行 */
 }
 
 .author-name {
     color: #ffffff;
-    font-size: 1.3em;
-    margin-top: 10px;
+    font-size: 1.3vw;
+    margin-top: 2vw;
+}
+
+.pingfen {
+    color: #ffffff;
+    font-size: 1.3vw;
 }
 
 /* 左右按钮 */
@@ -116,7 +124,7 @@ header {
     color: #fff;
     border: none;
     cursor: pointer;
-    font-size: 2em;
+    font-size: 2vw;
 }
 
 .prev-button {
@@ -151,7 +159,7 @@ header {
     font-family: 'Source Han Serif', serif;
 }
 .program-info p {
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-family: 'Source Han Sans', sans-serif;
 }
 
